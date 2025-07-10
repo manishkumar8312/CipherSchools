@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <style>
+        body {
+            background-color: #f0f8ff;  /* Light blue background */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;  /* Dark bluish-grey text */
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, button {
+            padding: 8px;
+            margin-top: 5px;
+            width: 250px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a simple HTML5 page with a title, heading, paragraph, and an image. Learning HTML is the first step towards web development!</p>
+    
+    <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
