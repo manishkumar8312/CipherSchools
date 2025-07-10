@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Input Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            padding: 8px;
+            margin-top: 10px;
+            width: 250px;
+        }
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Type Something and See It Below</h1>
+
+    <input type="text" id="userInput" placeholder="Type something here..."><br>
+    <button onclick="displayText()">Show Text</button>
+
+    <p id="outputText"></p>
+
+    <script>
+        function displayText() {
+            const input = document.getElementById('userInput').value;
+            document.getElementById('outputText').innerText = input;
+        }
+    </script>
+
+</body>
+</html>
