@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="message">Hello, welcome to my page!</h1>
+
+    <button onclick="changeText()">Click Me to Change Text</button>
+
+    <script>
+        function changeText() {
+            document.getElementById('message').innerText = "Thank you for clicking! 😊";
+        }
+    </script>
+
+</body>
+</html>
