@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled HTML Page - Day 1</title>
+  <style>
+    /* General Styles */
+    body {
+      background-color: #f0f8ff; /* Light background */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2c3e50; /* Dark blue text */
+      margin-bottom: 20px;
+    }
+
+    /* Card Styling */
+    .card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+
+    /* Form Styling */
+    form {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="email"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Positioned Elements */
+    .fixed-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 10px;
+      left: 10px;
+      background-color: #eaf2f8;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 150px;
+      right: 30px;
+      background-color: #fadbd8;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Styled Page</h1>
+  </header>
+
+  <main>
+
+    <!-- Card with text -->
+    <div class="card">
+      <p>This is a styled card with padding, border, and shadow. It looks clean and professional!</p>
+    </div>
+
+    <!-- Relative position example -->
+    <div class="relative-box">
+      This is a relatively positioned box.
+    </div>
+
+    <!-- Absolute position example -->
+    <div class="absolute-box">
+      I'm an absolutely positioned box!
+    </div>
+
+    <!-- Form section -->
+    <section>
+      <h2>Contact Form</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <!-- Link section -->
+    <section>
+      <p>Go back to <a href="https://www.cipherschools.com/profile">Home Page</a>.</p>
+    </section>
+
+  </main>
+
+  <!-- Fixed position bar -->
+  <div class="fixed-bar">
+    This is a fixed footer bar. It stays at the bottom.
+  </div>
+
+</body>
+</html>
